@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="667.0" maxWidth="1000.0" minHeight="667.0" minWidth="1000.0" prefHeight="667.0" prefWidth="1000.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJackie.view.TutorialController">
+   <children>
+      <GridPane layoutX="-393.0" layoutY="-94.0" prefHeight="667.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="0.0" prefWidth="120.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="816.0" minWidth="10.0" prefWidth="751.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="0.0" prefWidth="120.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="218.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="307.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="307.0" minHeight="0.0" prefHeight="159.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="449.0" minHeight="10.0" prefHeight="168.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="450.0" minHeight="10.0" prefHeight="161.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutorial" textAlignment="CENTER" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="40.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="The goal in Blackjack is to have a hand value as close to 21 as possible without going over. The best hand is an Ace and a 10-point card (10, Jack, Queen, King), known as a &quot;Blackjack.&quot;" wrappingWidth="756.099609375" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Objective: " wrappingWidth="75.099609375" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="If your hand exceeds 21, you bust and lose your bet." wrappingWidth="379.099609375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="If the dealer busts, all remaining players win" wrappingWidth="320.099609375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="If the dealer busts, all remaining players win" wrappingWidth="320.099609375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../CardImages/A-Spade.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../CardImages/A-Club.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../CardImages/A-Heart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../CardImages/A-Diamond.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#backToHome" prefHeight="31.0" prefWidth="76.0" text="Back" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="One more thing: the value of A can be 1 or 11" wrappingWidth="344.099609375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="The value of A will change in order to not burst" wrappingWidth="344.099609375" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

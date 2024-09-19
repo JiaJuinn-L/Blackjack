@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="667.0" maxWidth="1000.0" minHeight="667.0" minWidth="1000.0" prefHeight="667.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJackie.view.GameController">
+   <children>
+       <ImageView fitHeight="667.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+           <Image url="/Images/blackJackMat.png" />
+       </ImageView>
+      <GridPane layoutX="-8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="90.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="218.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="222.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="446.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="280.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="hitButton" mnemonicParsing="false" onAction="#addCard" prefWidth="100.0" text="Hit" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Button fx:id="standButton" mnemonicParsing="false" onAction="#stand" prefWidth="100.0" text="Stand" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <ImageView fx:id="playerCard1" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <ImageView fx:id="playerCard2" fitHeight="200.0" fitWidth="150.0" layoutX="10.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <ImageView fx:id="playerCard3" fitHeight="200.0" fitWidth="150.0" layoutX="130.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <ImageView fx:id="playerCard4" fitHeight="200.0" fitWidth="150.0" layoutX="250.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <ImageView fx:id="playerCard5" fitHeight="200.0" fitWidth="150.0" layoutX="370.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <ImageView fx:id="dealerCard1" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="dealerCard2" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="dealerCard3" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <ImageView fx:id="dealerCard4" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ImageView fx:id="dealerCard5" fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Text fill="#f5625d" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#357960" strokeType="OUTSIDE" strokeWidth="0.0" text="Player" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" layoutX="522.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Card Value:" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Card Value:" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semilight" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Win:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semilight" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#backToHome" prefWidth="100.0" text="Exit" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Round: " textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semilight" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="playerHandValue" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="2.0" />
+               </font>
+            </Text>
+            <Text fx:id="numWonRound" fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="dealerHandValue" fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="numRound" fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="winner" fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="playerHandValue" fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

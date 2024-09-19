@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="667.0" maxWidth="1000.0" minHeight="667.0" minWidth="1000.0" prefHeight="667.0" prefWidth="1000.0" styleClass="anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BlackJackie.view.HomeController">
+   <children>
+      <GridPane layoutY="7.0" prefHeight="667.0" prefWidth="1000.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="640.0" minHeight="10.0" prefHeight="320.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="70.0" minHeight="62.0" prefHeight="90.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="70.0" prefHeight="70.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#startGame" prefHeight="30.0" prefWidth="150.0" text="Start" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#viewLeaderboard" prefHeight="30.0" prefWidth="150.0" text="Leaderboard" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#exitApp" prefHeight="30.0" prefWidth="150.0" text="Exit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+             <ImageView fitHeight="286.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                 <Image url="/Images/BlackJackie.png" />
+             </ImageView>
+            <TextField fx:id="playerName" alignment="CENTER" promptText="Name" text="Anonymous" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Text fill="#ee8931" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name Here:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="tutorialBtn" mnemonicParsing="false" onAction="#showTutorial" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/tutorialIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets left="20.0" top="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
